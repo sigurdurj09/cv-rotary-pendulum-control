@@ -1,0 +1,28 @@
+@startuml InitialDeployment
+
+left to right direction
+node "uEye UI-1225LE-M-G Camera" as cam
+node "QUBE Servo-2 Inverted Pendulum" as pend
+node PC as pc {
+    node "Address Space 2" as as2 {
+        component "Simulink: Pendulum Controller" as siml
+    }
+    node "Address Space 1" as as1 {
+        component "C++ Executable: Camera Sensor" as camsens
+    }
+    interface "QUARC" as quarc
+    interface "IDS Software Suite" as ids
+    interface "OpenCV" as opencv
+    component "OpenCV Library" as openCvLib
+}
+
+
+ids -- cam: "USB 2.0"
+quarc -- pend: "USB 2.0"
+quarc -- siml
+camsens -- opencv
+camsens -- ids
+openCvLib -- opencv
+
+
+@enduml

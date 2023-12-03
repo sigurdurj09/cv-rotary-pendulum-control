@@ -1,0 +1,36 @@
+@startuml ActivityDiagram
+start
+repeat
+    :getFrame();
+    partition "Image Preparation" {
+        :rotateFrame;
+        :lightMasking();
+        :updateContrast();
+        :blurFrame(); 
+        :blackFiltering();
+        :blurFrame();
+    }
+    partition "Image Analysis" {
+        :placeCircles();
+        :camUpdateLastValues();
+
+        if (errorCheckDotsAndPlace()) then (True)
+            :calculateAngle();      
+            -> False;     
+        endif
+        
+        
+    }
+    partition "Variable Calculations" {
+        :camDifferentiatePosition();
+        :signalProcessingChain();
+    }
+    :updateVoltage();
+    :measurementLog();    
+
+
+repeat while (Stop signal activated) is (No)
+->Yes;
+end
+
+@enduml 
