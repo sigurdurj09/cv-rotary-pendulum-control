@@ -17,7 +17,7 @@
 #include "signalProcessing.h"
 
 #define ALPHALIMIT (M_PI/18)
-#define THETALIMIT (M_PI/3) //Stop device if theta is more than +-60Â°
+#define THETALIMIT (M_PI/3) //Stop device if theta is more than +-60°
 #define INTEGRALLIMIT 0.5
 #define VOLTAGELIMIT 7.5 //Max voltage +-15V in manual.  Doesn't usually go above 2 on scopes
 

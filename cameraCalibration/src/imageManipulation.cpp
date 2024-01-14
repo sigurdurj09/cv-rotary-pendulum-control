@@ -9,9 +9,9 @@
 #include <string>
 
 //Image macros
-#define ALPHA 8.0 //Contrast // Blinds -> 10.0 / Daylight -> 8.0 / Main lab testing -> 8.0
+#define ALPHA 10.0 //Contrast // Blinds -> 10.0 / Daylight -> 8.0 / Main lab testing -> 8.0
 #define BETA -100 //Brightness / Main lab testing -> -100
-#define BRIGHTTHRESHOLD 30  //Blinds -> 22 / Daylight -> 180 / Main lab testing -> 30
+#define BRIGHTTHRESHOLD 50  //Blinds -> 22 / Daylight -> 180 / Main lab testing -> 30
 #define BLACKTHRESHOLD 60 //Threshold for black mask //Blinds -> 50 / Daylight -> 200 / Main lab testing -> 60
 //Hough Macros
 #define HOUGHMINRAD 4 // Main lab testing -> 4

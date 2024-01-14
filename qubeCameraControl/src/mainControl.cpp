@@ -90,7 +90,6 @@ int main() {
             calculateRadians();
 
             for (t_uint32 channel = 0; channel < ARRAY_LENGTH(encoderChannels); channel++)
-                //Check that encoders are zeroed
                 printf("Encoder %d status: %7d   ", encoderChannels[channel], encoderCounts[channel]);
             printf("\n");
         }
