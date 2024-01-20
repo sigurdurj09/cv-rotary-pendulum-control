@@ -32,6 +32,10 @@ double Timer::getMeanFrequency() {
     return meanFrequency;
 }
 
+uint32_t Timer::getSamples() {
+    return nMeasurements;
+}
+
 void setupTimers() {
 
     Timer t1;
@@ -53,7 +57,7 @@ void setupTimers() {
 
 void printTimers() {
     for (auto element :timerMap) {
-        printf("Timer: %s - MeanPeriod %lf, MeanFrequency %lf\n", element.first.c_str(), element.second.getMeanPeriod(), element.second.getMeanFrequency());
+        printf("Timer: %s - MeanPeriod %lf, MeanFrequency %lf, Samples %d\n", element.first.c_str(), element.second.getMeanPeriod(), element.second.getMeanFrequency(), element.second.getSamples());
     }
 }
 

@@ -17,7 +17,7 @@
 #include "signalProcessing.h"
 
 #define ALPHALIMIT (M_PI/18)
-#define THETALIMIT (M_PI/3) //Stop device if theta is more than +-60°
+#define THETALIMIT (M_PI/3) //Stop device if theta is more than +-60ï¿½
 #define INTEGRALLIMIT 0.5
 #define VOLTAGELIMIT 7.5 //Max voltage +-15V in manual.  Doesn't usually go above 2 on scopes
 
@@ -192,10 +192,10 @@ t_error updateVoltage(t_card* board) {
 void printFinalState() {
     std::cout << "Final state" << std::endl;
     for (t_int32 channel = 0; channel < encoderChannelCount; channel++)
-        printf("ENC #%d: %7d   ", encoderChannels[channel], encoderCounts[channel]);
+        printf("Encoder %d status: %7d   ", encoderChannels[channel], encoderCounts[channel]);
     printf("\n");
     for (t_int32 channel = 0; channel < analogChannelCount; channel++)
-        printf("VOLTAGE #%d: %7f   ", analogChannels[channel], voltage[channel]);
+        printf("Voltage %d: %7f   ", analogChannels[channel], voltage[channel]);
     printf("\n");
     std::cout << "Kx: " << std::to_string(Kx) << std::endl;
     std::cout << "Z: " << std::to_string(thetaIntegral) << std::endl;

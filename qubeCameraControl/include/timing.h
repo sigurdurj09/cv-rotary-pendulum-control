@@ -12,6 +12,7 @@ public:
     void stop();
     double getMeanPeriod();
     double getMeanFrequency();
+    uint32_t getSamples();
 
 private:
     uint32_t nMeasurements;
