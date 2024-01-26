@@ -8,10 +8,20 @@ Autodesk Inventor files for device covers and thesis diagrams.
 Code that is similar to the camera portion of the main control code.  Can be used to train the camera on the pendulum while it is controlled by a different application.
 This is useful for tuning camera parameters that can then be copied to the main code.
 
-## matlabAnalysis
+## dataAndTesting
+
+Contains various types of data and test scripts.
+
+### mainTestLogs
+The logs from the main statistical trials of the project
+
+### matlabAnalysis
 Contains various materials used for controller gain calculations, signal analysis, and model analysis.  The most important and useful scripts are mentioned in the thesis.
 The testing scripts for chapters 5.2 and 5.3 are labeled as such.  A few test scripts that did not make the thesis are included in case they may be of interest to someone.
 Dated project logs are contained in a subfolder.
+
+###
+An Excel file collecting terminal output logs for analysis.
 
 ## qubeCameraControl
 The main application code.  Consult the thesis for a detailed description of functionality and Appendix C for setup help.
