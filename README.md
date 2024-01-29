@@ -17,11 +17,14 @@ The logs from the main statistical trials of the project
 
 ### matlabAnalysis
 Contains various materials used for controller gain calculations, signal analysis, and model analysis.  The most important and useful scripts are mentioned in the thesis.
-The testing scripts for chapters 5.2 and 5.3 are labeled as such.  A few test scripts that did not make the thesis are included in case they may be of interest to someone.
-Dated project logs are contained in a subfolder.
+The testing scripts for chapter 5 are labeled as such.  A few test scripts that did not make the thesis are included in case they may be of interest to someone.
+Dated project logs are contained in subfolders.
 
 ### TestData.xlsx
 An Excel file collecting terminal output logs for analysis.
+
+### TestCalculations.xlsx
+An Excel file containing calculations for TestData.xlsx.
 
 ## qubeCameraControl
 The main application code.  Consult the thesis for a detailed description of functionality and Appendix C for setup help.
